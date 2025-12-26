@@ -27,6 +27,9 @@ function simpanInput(event) {
         { nama: 'Ayanokouji 🥶', prob: 0.01, src: './img/Ayanokoji.jpeg' },
         { nama: 'Sigit Rendang 😂', prob: 0.10, src: './img/Sigit rendang.jpg' },
         { nama: 'Laba-laba Sunda 😂', prob: 0.10, src: './img/laba laba sunda.jpeg' },
+        { nama: 'Putri Kecil Ayah 😂', prob: 0.15, src: './img/putri kecil ayah.png' },
+
+        // Via Link address
         { nama: 'Rehan Digital 😂', prob: 0.10, src: 'https://i.pinimg.com/1200x/8e/b9/3b/8eb93b3fc2c2b04fdbd1655b7860aea9.jpg' },
         { nama: 'Raja Karbit 😂', prob: 0.10, src: 'https://i.pinimg.com/736x/8f/5d/af/8f5dafda27c55f0da363cd23e21c990e.jpg' },
         { nama: 'Raja JMK 😂', prob: 0.10, src: 'https://i.pinimg.com/736x/20/8d/ef/208def2cba089d7815b640ed77fae64f.jpg' },
@@ -35,7 +38,7 @@ function simpanInput(event) {
         { nama: 'Karbit Pemula 😂', prob: 0.05, src: 'https://i.pinimg.com/736x/05/c7/e6/05c7e6ebfea086c7229888193b5e835a.jpg' },
         { nama: 'Si Hitam Coklat 😂', prob: 0.06, src: 'https://i.pinimg.com/736x/8f/b8/86/8fb8861f5694777b2b729ba57a7db6dd.jpg' },
         { nama: 'Si Putih Susu 😂', prob: 0.06, src: 'https://i.pinimg.com/736x/ca/9c/70/ca9c7027ed2a55f6fc95c81996bb63e9.jpg' },
-        { nama: 'Admin PSHT 😂', prob: 0.10, src: 'https://madiunraya.com/wp-content/uploads/2018/08/1535526098355.png' },
+        { nama: 'Admin PSHT 😂', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYTUYw8qNo0qFl2_BOLLenBlQpZRlmpYoSg&s' },  
     ];
 
     const rand = Math.random();
