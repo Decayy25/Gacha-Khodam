@@ -42,6 +42,8 @@ function simpanInput(event) {
         { nama: 'Admin PSHT 😂', prob: 0.19, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYTUYw8qNo0qFl2_BOLLenBlQpZRlmpYoSg&s' },
         { nama: 'Kapal Jetski Cilacap 😂', prob: 0.20, src: 'https://pbs.twimg.com/media/GzCwJzyWAAA56QI.jpg' },
         { nama: 'Ikan Pesut kali Ciliwung 😂', prob: 0.21, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPJiS3t7m5hOp_S4BGPsUZmYTSpZ0NdUV2Q&s' },
+        { nama: 'Ganjar Sigma 😂', prob: 0.22, src: 'https://i.pinimg.com/736x/53/bb/f8/53bbf88737261d9afae276c0dbfad69a.jpg'},
+        { nama: 'Verrell Takos Animobulets 😂', prob: 0.23, src: 'https://i.pinimg.com/736x/bf/4d/a3/bf4da332f78d3af3c90730b86566c9b8.jpg'}
     ];
 
     const rand = Math.random();
