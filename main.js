@@ -28,24 +28,27 @@ function simpanInput(event) {
         { nama: 'Ayanokouji 🥶', prob: 0.01, src: './img/Ayanokoji.jpeg' },
         { nama: 'Sigit Rendang 😂', prob: 0.1, src: './img/Sigit rendang.jpg' },
         { nama: 'Laba-laba Sunda 😂', prob: 0.1, src: './img/laba laba sunda.jpeg' },
-        { nama: 'Putri Kecil Ayah 😂', prob: 0.2, src: './img/putri kecil ayah.png' },
-        { nama: 'Bahlil Flasbang 😂', prob: 0.2, src: './img/Bahlil flasbang.jpg'},
+        { nama: 'Putri Kecil Ayah 🤣', prob: 0.2, src: './img/putri kecil ayah.png' },
+        { nama: 'Bahlil Flasbang 💥', prob: 0.2, src: './img/Bahlil flasbang.jpg'},
 
         // Via Link address
-        { nama: 'Rehan Digital 😂', prob: 0.3, src: 'https://i.pinimg.com/1200x/8e/b9/3b/8eb93b3fc2c2b04fdbd1655b7860aea9.jpg' },
-        { nama: 'Raja Karbit 😂', prob: 0.3, src: 'https://i.pinimg.com/736x/8f/5d/af/8f5dafda27c55f0da363cd23e21c990e.jpg' },
-        { nama: 'Raja JMK 😂', prob: 0.4, src: 'https://i.pinimg.com/736x/20/8d/ef/208def2cba089d7815b640ed77fae64f.jpg' },
-        { nama: 'Raja Pedo 😂', prob: 0.4, src: 'https://i.pinimg.com/736x/23/e0/36/23e036adb51c2cfb1d99e6d4556e7a5d.jpg' },
+        { nama: 'Rehan Digital', prob: 0.3, src: 'https://i.pinimg.com/1200x/8e/b9/3b/8eb93b3fc2c2b04fdbd1655b7860aea9.jpg' },
+        { nama: 'Raja Karbit 🤣', prob: 0.3, src: 'https://i.pinimg.com/736x/8f/5d/af/8f5dafda27c55f0da363cd23e21c990e.jpg' },
+        { nama: 'Raja JMK 🤣', prob: 0.4, src: 'https://i.pinimg.com/736x/20/8d/ef/208def2cba089d7815b640ed77fae64f.jpg' },
+        { nama: 'Raja Pedo 🫣', prob: 0.4, src: 'https://i.pinimg.com/736x/23/e0/36/23e036adb51c2cfb1d99e6d4556e7a5d.jpg' },
         { nama: 'Member JMK 😂', prob: 0.5, src: 'https://i.pinimg.com/1200x/ec/b6/d5/ecb6d506aa4fa5d83def21187a00e942.jpg' },
         { nama: 'Karbit Pemula 😂', prob: 0.5, src: 'https://i.pinimg.com/736x/05/c7/e6/05c7e6ebfea086c7229888193b5e835a.jpg' },
-        { nama: 'Si Hitam Coklat 😂', prob: 0.6, src: 'https://i.pinimg.com/736x/8f/b8/86/8fb8861f5694777b2b729ba57a7db6dd.jpg' },
-        { nama: 'Si Putih Susu 😂', prob: 0.6, src: 'https://i.pinimg.com/736x/ca/9c/70/ca9c7027ed2a55f6fc95c81996bb63e9.jpg' },
-        { nama: 'Admin PSHT 😂', prob: 0.7, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYTUYw8qNo0qFl2_BOLLenBlQpZRlmpYoSg&s' },
+        { nama: 'Si Hitam Coklat 🤣', prob: 0.6, src: 'https://i.pinimg.com/736x/8f/b8/86/8fb8861f5694777b2b729ba57a7db6dd.jpg' },
+        { nama: 'Si Putih Susu 🤣', prob: 0.6, src: 'https://i.pinimg.com/736x/ca/9c/70/ca9c7027ed2a55f6fc95c81996bb63e9.jpg' },
+        { nama: 'Admin PSHT 🤣', prob: 0.7, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYTUYw8qNo0qFl2_BOLLenBlQpZRlmpYoSg&s' },
         { nama: 'Kapal Jetski Cilacap 😂', prob: 0.7, src: 'https://pbs.twimg.com/media/GzCwJzyWAAA56QI.jpg' },
-        { nama: 'Ikan Pesut kali Ciliwung 😂', prob: 0.8, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPJiS3t7m5hOp_S4BGPsUZmYTSpZ0NdUV2Q&s' },
+        { nama: 'Ikan Pesut kali Ciliwung 🤣', prob: 0.8, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPJiS3t7m5hOp_S4BGPsUZmYTSpZ0NdUV2Q&s' },
         { nama: 'Ganjar Sigma 😂', prob: 0.8, src: 'https://i.pinimg.com/736x/53/bb/f8/53bbf88737261d9afae276c0dbfad69a.jpg'},
-        { nama: 'Verrell Takos Animobulets 😂', prob: 0.9, src: 'https://i.pinimg.com/736x/bf/4d/a3/bf4da332f78d3af3c90730b86566c9b8.jpg'}
-    ];
+        { nama: 'Verrell Takos Animobulets 🤣', prob: 0.9, src: 'https://i.pinimg.com/736x/bf/4d/a3/bf4da332f78d3af3c90730b86566c9b8.jpg'},
+        { nama: 'Vincent Dua Orang 🥶', prob: 0.9, src: 'https://i.pinimg.com/736x/a0/77/d8/a077d85e762f6ce88bea4b7df543ce6f.jpg'},
+        { nama: 'Farhan Uget Uget 🤣', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9C9k_RbOXkWeRVE2Gj_ciA-sGlA-VKhY4Q&s'},
+        { nama: 'Fajar Basikal 😋', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9mr322nESFgsxpfrNb_hQRcnaaUwnnuQSw&s'}
+    ]
 
     const rand = Math.random();
     // Hitung total probabilitas
