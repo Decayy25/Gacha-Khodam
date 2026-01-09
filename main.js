@@ -29,7 +29,7 @@ function simpanInput(event) {
         { nama: 'Sigit Rendang 😂', prob: 0.1, src: './img/Sigit rendang.jpg' },
         { nama: 'Laba-laba Sunda 😂', prob: 0.1, src: './img/laba laba sunda.jpeg' },
         { nama: 'Putri Kecil Ayah 🤣', prob: 0.2, src: './img/putri kecil ayah.png' },
-        { nama: 'Bahlil Flasbang 💥', prob: 0.2, src: './img/Bahlil flasbang.jpg'},
+        { nama: 'Bahlil Flashbang 💥', prob: 0.2, src: './img/Bahlil flasbang.jpg'},
 
         // Via Link address
         { nama: 'Rehan Digital', prob: 0.3, src: 'https://i.pinimg.com/1200x/8e/b9/3b/8eb93b3fc2c2b04fdbd1655b7860aea9.jpg' },
@@ -47,7 +47,8 @@ function simpanInput(event) {
         { nama: 'Verrell Takos Animobulets 🤣', prob: 0.9, src: 'https://i.pinimg.com/736x/bf/4d/a3/bf4da332f78d3af3c90730b86566c9b8.jpg'},
         { nama: 'Vincent Dua Orang 🥶', prob: 0.9, src: 'https://i.pinimg.com/736x/a0/77/d8/a077d85e762f6ce88bea4b7df543ce6f.jpg'},
         { nama: 'Farhan Uget Uget 🤣', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9C9k_RbOXkWeRVE2Gj_ciA-sGlA-VKhY4Q&s'},
-        { nama: 'Fajar Basikal 😋', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9mr322nESFgsxpfrNb_hQRcnaaUwnnuQSw&s'}
+        { nama: 'Fajar Basikal 😋', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9mr322nESFgsxpfrNb_hQRcnaaUwnnuQSw&s'},
+        { nama: 'Mas Amba 🥶', prob: 0.11, src: 'https://i.pinimg.com/736x/28/8f/23/288f230d1ac9d02e4923930ef0b63ab1.jpg'}
     ]
 
     const rand = Math.random();
