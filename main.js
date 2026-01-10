@@ -81,14 +81,103 @@ function simpanInput(event) {
 
 // Opsional
 
-function resetRandom() { 
-    const namaPengguna = document.getElementById('nama').value.trim();
-    const storageKey = `khodam_${namaPengguna}`;
+function resetRandom() {
+    const lastKey = localStorage.getItem("last_khodam_user");
 
-    if (localStorage.getItem(storageKey)) {
-        localStorage.removeItem(storageKey);
-        document.getElementById("output").innerText = "Khodam berhasil di-reset. Silakan Submit ulang.";
-    } else {
-        document.getElementById("output").innerText = "Belum ada data yang disimpan.";
+    if (!lastKey) {
+        document.getElementById("output").innerText = "Tidak ada data untuk di-reset.";
+        return;
     }
+
+    localStorage.removeItem(lastKey);
+    localStorage.removeItem(lastKey + "_image");
+    localStorage.removeItem("last_khodam_user");
+
+    document.getElementById("output").innerText =
+        "Khodam berhasil di-reset. Silakan submit ulang.";
+
+    document.querySelector(".MemeImg").innerHTML = "";
+
+    function resetAll() {
+        localStorage.clear();
+        renderKhodam();
+    }
+
+    resetAll();
+    renderKhodam();
 }
+
+function tampilkanSemuaKhodam() {
+    const container = document.getElementById("list-name");
+    if (!container) return;
+
+    let html = "";
+    let found = false;
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+
+        if (key.startsWith("khodam_") && !key.endsWith("_image")) {
+            found = true;
+
+            const name = key.replace("khodam_", "");
+            const khodam = localStorage.getItem(key);
+            const img = localStorage.getItem(key + "_image");
+
+            // ✅ TEMPLATE LITERAL
+            html += `
+                <div class="khodam-item">
+                    <img src="${img}" alt="${khodam}">
+                    <div>
+                        <div class="khodam-name">${name}</div>
+                        <div class="khodam-title">${khodam}</div>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    container.innerHTML = found
+        ? html
+        : `<div class="text-gray-400 text-sm">Belum ada data tersimpan</div>`;
+}
+
+(function initKhodamList() {
+    tampilkanSemuaKhodam();
+})();
+
+const renderKhodam = (() => {
+    return function () {
+        const container = document.getElementById("list-name");
+        if (!container) return;
+
+        let html = "";
+        let found = false;
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+
+            if (key.startsWith("khodam_") && !key.endsWith("_image")) {
+                found = true;
+
+                const name = key.replace("khodam_", "");
+                const khodam = localStorage.getItem(key);
+                const img = localStorage.getItem(key + "_image");
+
+                html += `
+                    <div class="khodam-item">
+                        <img src="${img}" alt="${khodam}">
+                        <div>
+                            <div class="khodam-name">${name}</div>
+                            <div class="khodam-title">${khodam}</div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        container.innerHTML = found
+            ? html
+            : `<div class="text-gray-400 text-sm">Belum ada data tersimpan</div>`;
+    };
+})();

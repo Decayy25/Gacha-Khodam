@@ -43,3 +43,55 @@ h2 {
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+.page {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card {
+    background: #000;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+
+.sidebar {
+    background: #000;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 1em;
+    width: 350px;
+    color: white;
+}
+
+/* Card list */
+.khodam-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Gambar khodam */
+.khodam-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text */
+.khodam-name {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.khodam-title {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
