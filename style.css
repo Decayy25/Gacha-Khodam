@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card {
@@ -64,6 +64,8 @@ h2 {
     border-radius: 1em;
     width: 350px;
     color: white;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 /* Card list */
@@ -94,4 +96,10 @@ h2 {
 .khodam-title {
     font-size: 0.85rem;
     color: #9ca3af;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    align-items: center;
 }

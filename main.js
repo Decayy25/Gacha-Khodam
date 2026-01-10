@@ -1,4 +1,5 @@
 function simpanInput(event) {
+    renderKhodam();
     event.preventDefault();
 
     const namaPengguna = document.getElementById('nama').value.trim();
@@ -77,33 +78,30 @@ function simpanInput(event) {
     `;
 
     console.log(`Random: ${rand}`);
+    renderKhodam();
 }
 
 // Opsional
 
 function resetRandom() {
-    const lastKey = localStorage.getItem("last_khodam_user");
+    const keysToDelete = [];
 
-    if (!lastKey) {
-        document.getElementById("output").innerText = "Tidak ada data untuk di-reset.";
-        return;
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith("khodam_")) {
+            keysToDelete.push(key);
+        }
     }
 
-    localStorage.removeItem(lastKey);
-    localStorage.removeItem(lastKey + "_image");
+    keysToDelete.forEach(key => localStorage.removeItem(key));
+
     localStorage.removeItem("last_khodam_user");
 
     document.getElementById("output").innerText =
-        "Khodam berhasil di-reset. Silakan submit ulang.";
+        "Semua data khodam berhasil di-reset.";
 
     document.querySelector(".MemeImg").innerHTML = "";
 
-    function resetAll() {
-        localStorage.clear();
-        renderKhodam();
-    }
-
-    resetAll();
     renderKhodam();
 }
 
