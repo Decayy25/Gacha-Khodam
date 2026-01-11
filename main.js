@@ -10,12 +10,6 @@ function simpanInput(event) {
         return;
     }
 
-    if (namaPengguna === 'Moch. Rizqi Hermawan') {
-        document.getElementById("output").innerText = 'Anda sudah dipastikan Programmer & Network Engineer 😎';
-        document.querySelector(".MemeImg").innerHTML = `<img src="https://i.imgur.com/qItEw1O.png" class="rounded-lg w-60 mt-3" />`;
-        return;
-    }
-
     // Cek apakah sudah pernah disimpan
     const storedResult = localStorage.getItem(storageKey);
     if (storedResult) {
@@ -53,7 +47,6 @@ function simpanInput(event) {
     ]
 
     const rand = Math.random();
-    // Hitung total probabilitas
     const totalProb = list.reduce((acc, item) => acc + item.prob, 0);
     let sum = 0;
     let result = "";
@@ -82,10 +75,8 @@ function simpanInput(event) {
 }
 
 // Opsional
-
 function resetRandom() {
     const keysToDelete = [];
-
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         if (key.startsWith("khodam_")) {
@@ -94,14 +85,9 @@ function resetRandom() {
     }
 
     keysToDelete.forEach(key => localStorage.removeItem(key));
-
     localStorage.removeItem("last_khodam_user");
-
-    document.getElementById("output").innerText =
-        "Semua data khodam berhasil di-reset.";
-
+    document.getElementById("output").innerText ="Semua data khodam berhasil di-reset.";
     document.querySelector(".MemeImg").innerHTML = "";
-
     renderKhodam();
 }
 
@@ -114,15 +100,11 @@ function tampilkanSemuaKhodam() {
 
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-
         if (key.startsWith("khodam_") && !key.endsWith("_image")) {
             found = true;
-
             const name = key.replace("khodam_", "");
             const khodam = localStorage.getItem(key);
             const img = localStorage.getItem(key + "_image");
-
-            // ✅ TEMPLATE LITERAL
             html += `
                 <div class="khodam-item">
                     <img src="${img}" alt="${khodam}">
