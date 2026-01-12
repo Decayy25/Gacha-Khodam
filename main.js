@@ -74,6 +74,15 @@ function simpanInput(event) {
     renderKhodam();
 }
 
+const hariIni = new Date();
+const hari = hariIni.getDay(); 
+
+if (hari === 0) {
+    console.log("Hari ini Senin! Waktunya reset.");
+    resetRandom();
+    tampilkanSemuaKhodam();
+}
+
 // Opsional
 function resetRandom() {
     const keysToDelete = [];
@@ -161,3 +170,4 @@ const renderKhodam = (() => {
             : `<div class="text-gray-400 text-sm">Belum ada data tersimpan</div>`;
     };
 })();
+
