@@ -43,7 +43,8 @@ function simpanInput(event) {
         { nama: 'Vincent Dua Orang 🥶', prob: 0.9, src: 'https://i.pinimg.com/736x/a0/77/d8/a077d85e762f6ce88bea4b7df543ce6f.jpg'},
         { nama: 'Farhan Uget Uget 🤣', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9C9k_RbOXkWeRVE2Gj_ciA-sGlA-VKhY4Q&s'},
         { nama: 'Fajar Basikal 😋', prob: 0.10, src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9mr322nESFgsxpfrNb_hQRcnaaUwnnuQSw&s'},
-        { nama: 'Mas Amba 🥶', prob: 0.11, src: 'https://i.pinimg.com/736x/28/8f/23/288f230d1ac9d02e4923930ef0b63ab1.jpg'}
+        { nama: 'Mas Amba 🥶', prob: 0.11, src: 'https://i.pinimg.com/736x/28/8f/23/288f230d1ac9d02e4923930ef0b63ab1.jpg'},
+        { nama: 'Wowo Pecinta Sawit 😘', prob: 0.11, src: 'https://i.pinimg.com/736x/75/3b/3d/753b3d0b667226085221c28070722143.jpg'}
     ]
 
     const rand = Math.random();
@@ -83,7 +84,7 @@ if (hari === 0) {
     tampilkanSemuaKhodam();
 }
 
-// Opsional
+
 function resetRandom() {
     const keysToDelete = [];
     for (let i = 0; i < localStorage.length; i++) {
