@@ -25,6 +25,7 @@ function simpanInput(event) {
         { nama: 'Laba-laba Sunda 😂', prob: 0.1, src: './img/laba laba sunda.jpeg' },
         { nama: 'Putri Kecil Ayah 🤣', prob: 0.2, src: './img/putri kecil ayah.png' },
         { nama: 'Bahlil Flashbang 💥', prob: 0.2, src: './img/Bahlil flasbang.jpg'},
+        { nama: 'Yadi Attack Speed 💦', prob: 0.2, src: './img/Yadi attack speed.jpeg'},
 
         // Via Link address
         { nama: 'Rehan Digital', prob: 0.3, src: 'https://i.pinimg.com/1200x/8e/b9/3b/8eb93b3fc2c2b04fdbd1655b7860aea9.jpg' },
